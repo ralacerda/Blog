@@ -1,0 +1,10 @@
+.flow > * + * {
+  margin-top: var(--flow-space, var(--space-m-l));
+}
+
+.center {
+  box-sizing: content-box;
+  max-inline-size: 71.25rem;
+  margin-inline: auto;
+  padding-inline: var(--space-m-l);
+}
