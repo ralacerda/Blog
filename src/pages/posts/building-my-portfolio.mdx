@@ -1,0 +1,81 @@
+---
+title: Building my portfolio
+date: 2022-11-03
+layout: "../../layouts/BlogLayout.astro"
+description: How I build my first portofolio. Lessons learned, mistakes and what I would different today.
+---
+
+import CodeBlock from "../../components/CodeBlock.vue";
+export const components = { code: CodeBlock };
+
+## Design
+
+### The first mistake
+
+I created the design while implementing it. That was a great mistake, which taught me a very important lesson.
+
+You can save hours of your time by having the design ready before writing your first CSS selector or HTML tag.
+
+Not only it's easier to change the design when using something like PenPot or Figma, but you also don't have to THINK about the CSS, and the final design is what really dictates the HTML
+
+When you are only thinking on blocks and grids, you are going to design a bunch of blocks and grids, but doing
+the design first means you are free to prototype, create crazy layouts and check what work and what doesn't.
+
+CSS is not an easy beast, but if the design looks good, I wouldn't mind spending a few minutes or even hours to make it work.
+
+### Double the theme, double the trouble
+
+I decided to include both a dark and a light theme. Since this was my first time trying that, I decided the colors would be as simple as possible: 3 shades of black, 3 shades of white and one shade of red.
+
+The contrast between the blacks and the whites was at least 4.5 (above WCAG AA), and I only used red for decoration. This meant I could just invert the background colors with the foreground colors, without having to worry about contrast.
+
+There were 2 special cases that I had to pick the same color for both themes:
+
+The button when hovered has a red background, and the contrast with white was a little low, so no matter the theme, the text color is always black.
+
+Shadows are always black. I tried to use white shadows in the dark theme, but it looked weird and unnatural (I guess because white shadows don't exist).
+
+## Tailwind? Bootstrap?
+
+Since this is a portfolio to showcase my work, I decided it was worth not to use any CSS framework, and instead, write my own.
+
+It was a lot of fun, and I had the chance to push what I learned about Grid and Flex to the limit.
+
+## BEM and Scoped CSS
+
+## Post-CSS
+
+## Vue JS
+
+## Vite
+
+## Vite-ssg
+
+## Hosting
+
+## Github Pages vs Netlify
+
+## Looking back
+
+The good
+
+- Final design looks good
+- It wasn't hard to adapt the design to smaller screens
+- I learned A TON by trying to come up with something from scratch
+- Adopting a 12 column design later in the design processes helped me improve previous ideas
+
+The bad
+
+- Trying to design while programming meant time wasted trying complex layouts
+- A lot of frustration when everything looked wrong without me knowing why
+
+Next time I'll either hire someone to create some initial design or I'll take my time and finish the design first in a tool like PenPot or Figma.
+
+```css filename="index.js"
+.center {
+  box-sizing: content-box;
+  max-inline-size: 71.25rem;
+  margin-inline: auto;
+  padding-inline: var(--space-m-l);
+}
+```
