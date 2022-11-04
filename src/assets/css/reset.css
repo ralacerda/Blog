@@ -18,7 +18,8 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+pre {
   margin: 0;
 }
 
