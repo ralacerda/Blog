@@ -97,3 +97,27 @@ h3 {
   margin-top: var(--space-2xs);
   display: block;
 }
+
+.code-block {
+  max-width: 50ch;
+  padding-inline: var(--space-xl);
+  padding-block: var(--space-m);
+  position: relative;
+}
+
+.code-block .language {
+  margin-top: 0;
+  line-height: 1;
+  display: inline;
+  font-size: var(--step-0);
+  top: var(--space-2xs);
+  right: var(--space-l);
+  position: absolute;
+  font-family: monospace;
+  color: var(--red);
+  user-select: none;
+}
+
+.code-block .code {
+  overflow-y: scroll;
+}
