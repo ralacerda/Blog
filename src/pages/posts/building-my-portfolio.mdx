@@ -6,7 +6,6 @@ description: How I build my first portofolio. Lessons learned, mistakes and what
 ---
 
 import CodeBlock from "../../components/CodeBlock.vue";
-export const components = { code: CodeBlock };
 
 ## Design
 
@@ -71,7 +70,8 @@ The bad
 
 Next time I'll either hire someone to create some initial design or I'll take my time and finish the design first in a tool like PenPot or Figma.
 
-```css filename="index.js"
+<CodeBlock language="css">
+```css
 .center {
   box-sizing: content-box;
   max-inline-size: 71.25rem;
@@ -79,3 +79,4 @@ Next time I'll either hire someone to create some initial design or I'll take my
   padding-inline: var(--space-m-l);
 }
 ```
+</CodeBlock>
