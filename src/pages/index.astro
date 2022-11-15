@@ -1,17 +1,8 @@
 ---
-const posts = await Astro.glob("../pages/posts/*.mdx");
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-    {posts.map((post) => <a href={post.url}> {post.frontmatter.title} </a>)}
-  </body>
-</html>
+<BaseLayout>
+  <h1>Astro</h1>
+  <a href="posts">Posts</a>
+</BaseLayout>
